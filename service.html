@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Services - Web Development</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #58a6ff;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      padding: 30px 25px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      backdrop-filter: blur(4px);
+    }
+
+    h2 {
+      color: #58a6ff;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      line-height: 1.7em;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #58a6ff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #1f6feb;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <header>
+    <h1>My Services</h1>
+    <nav><a href="index.html">← Back to Home</a></nav>
+  </header>
+
+  <div class="container">
+    <h2>Web Development Services</h2>
+    <p>
+      I offer professional and scalable web development services tailored to your needs. Whether you're looking to build a dynamic website, a responsive portfolio, or a full-stack web application, I’ve got you covered.
+    </p>
+
+    <h2>What I Offer</h2>
+    <ul>
+      <li><strong>Frontend Development</strong> – Clean, responsive, and user-friendly designs using HTML, CSS, JavaScript, React, and more.</li>
+      <li><strong>Backend Development</strong> – Secure server-side logic, RESTful APIs, and database integration using Node.js, Express, and MongoDB.</li>
+      <li><strong>Full-Stack Solutions</strong> – Complete web app development from UI to database deployment.</li>
+    </ul>
+
+    <h2>Why Choose Me?</h2>
+    <ul>
+      <li>Modern design and best coding practices</li>
+      <li>Fast delivery and responsive layout</li>
+      <li>Project deployment and post-launch support</li>
+    </ul>
+    <h2>Other Services:</h2>
+    <p>I provide <B>Graphic Design</B>  services, crafting logos, illustrations, and marketing materials to enhance
+       brand identity. My expertise in <b>Video Editing</b> allows me to produce engaging shorts, reels, and motion
+        graphics for digital platforms. I design <b>Templates</b> for presentations, social media, and business 
+        documents, ensuring professional and visually appealing content. With skills in <b>Thumbnail & Photo
+      Editing</b>, I create eye-catching images for various platforms. Additionally, I offer Social Media Management, 
+      handling profile optimization, content strategy, and audience engagement to boost online presence.</p>
+
+    <a class="button" href="contact.html">Contact Me</a>
+  </div>
+
+  <!-- Particle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        size: { value: 3 },
+        color: { value: "#58a6ff" },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#58a6ff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

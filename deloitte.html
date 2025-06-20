@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deloitte Internship</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f0f0f;
+      color: #f0f0f0;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0 10px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #58a6ff;
+      font-size: 14px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 30px 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      margin-top: 40px;
+      backdrop-filter: blur(4px);
+    }
+
+    h2 {
+      color: #58a6ff;
+      margin-top: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      line-height: 1.7em;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 20px;
+      background-color: #58a6ff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #1f6feb;
+    }
+
+    .date {
+      color: #ccc;
+      font-size: 0.95em;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <header>
+    <h1>Deloitte Virtual Internship</h1>
+    <nav><a href="index.html">← Back to Home</a></nav>
+  </header>
+
+  <div class="container">
+    <p class="date">Duration: – May 2025 (Remote Internship)</p>
+
+    <h2>Overview</h2>
+    <p>
+      I completed a virtual internship at Deloitte Australia through Forage, focused on real-world consulting tasks. The internship included two detailed projects simulating client interaction, data interpretation, and decision-making in a professional services environment.
+    </p>
+
+    <h2>Roles & Responsibilities</h2>
+    <ul>
+      <li>Participated in simulated client meetings to gather business requirements and strategic goals.</li>
+      <li>Analyzed provided datasets to identify insights related to operational efficiency and customer behavior.</li>
+      <li>Developed recommendations and presented solutions based on mock consultancy cases.</li>
+      <li>Prepared detailed reports and client-facing deliverables simulating real Deloitte practices.</li>
+    </ul>
+
+    <h2>Technologies & Tools</h2>
+    <ul>
+      <li>Microsoft Excel (data analysis)</li>
+      <li>Google Slides (presentation reports)</li>
+      <li>Business Analysis & Strategy Frameworks</li>
+    </ul>
+
+    <h2>Skills Gained</h2>
+    <ul>
+      <li>Consulting lifecycle understanding</li>
+      <li>Client communication and business requirement analysis</li>
+      <li>Professional report writing and insight generation</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Project 1 – Telemetry Data Unification for Daikibo Industrials:</strong> In this project, I developed a solution to unify telemetry data from Daikibo Industrials, where half of the infrastructure utilized one data format and the other half used a different format. .</li>
+      <li><strong>Project 2 –  Internal Machine Health Monitoring Dashboard — Daikibo Industrials:</strong> As part of Deloitte Australia’s technical internship challenge, I proposed the development of a secure, internal-use-only dashboard for Daikibo Industrials. The dashboard visualizes the real-time health status of 9 industrial machines across 4 factories..</li>
+    </ul>
+
+    <h2>Outcome</h2>
+    <p>
+      Successfully completed the virtual internship with hands-on exposure to Deloitte’s consulting workflow and processes. The experience enhanced my analytical thinking and presentation skills in a corporate setup.
+    </p>
+
+    <a class="button" href="deloitte.pdf" target="_blank">
+      View Certificate
+    </a>
+  </div>
+
+  <!-- Particle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 50 },
+        size: { value: 3 },
+        color: { value: "#58a6ff" },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: "#58a6ff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2
+        }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

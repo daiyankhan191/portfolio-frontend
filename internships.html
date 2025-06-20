@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internships</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background-animation"></div>
+  <header>
+    <div class="sub-container">
+      <h1>Internships</h1>
+      <nav>
+        <a href="index.html">Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>My Internships</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Deloitte Australia</h3>
+          <p>Worked on secure systems and analytics as part of Deloitte’s tech internship program.</p>
+          <a href="deloitte.html">View Details</a>
+        </div>
+        <div class="project-card">
+          <h3>EtrinIndia</h3>
+          <p>This internship at EtrinIndia focused on Machine Learning with Python. I was trained in core ML concepts and algorithms and gained hands-on experience through project development and real-world datasets..</p>
+          <a href="EtrinIndia.html">View Details</a>
+        </div>
+        <div class="project-card">
+          <h3>Bharat Intern</h3>
+          <p>I worked remotely as a web developer. I was assigned to build and deploy modern web projects while improving frontend and responsive design skills.</p>
+          <a href="bharat.html">View Details</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const background = document.querySelector(".background-animation");
+    if (!background) return; // Safety check
+
+    for (let i = 0; i < 40; i++) {
+      const drop = document.createElement("div");
+      drop.classList.add("droplet");
+      drop.style.width = `${Math.random() * 8 + 4}px`;
+      drop.style.height = drop.style.width;
+      drop.style.left = `${Math.random() * 100}vw`;
+      drop.style.top = `${Math.random() * -100}px`;
+      drop.style.animationDuration = `${Math.random() * 6 + 6}s`;
+      background.appendChild(drop);
+    }
+  });
+</script>
+
+</body>
+</html>

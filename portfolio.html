@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Project</title>
+
+  <!-- Particle.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <style>
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #0e0e0e;
+      z-index: -1;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #ffffff;
+      background-color: transparent;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 10px 10px;
+    }
+
+    .sub-container h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #00aaff;
+    }
+
+    .sub-container nav a {
+      display: inline-block;
+      margin-top: 8px;
+      font-size: 0.9em;
+      color: #cccccc;
+      text-decoration: none;
+    }
+
+    .sub-container nav a:hover {
+      color: #00aaff;
+    }
+
+    .project-details {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(30, 30, 30, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 170, 255, 0.2);
+    }
+
+    .project-details h2 {
+      color: #00aaff;
+    }
+
+    .project-details p, .project-details ul {
+      font-size: 1.1em;
+      line-height: 1.6em;
+      color: #e0e0e0;
+    }
+
+    .project-dates {
+      margin-top: 15px;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #00aaff;
+      font-size: 1em;
+    }
+
+    .github-button {
+      display: block;
+      width: max-content;
+      margin: 30px auto 0;
+      padding: 10px 20px;
+      background-color: #00aaff;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .github-button:hover {
+      background-color: #0088cc;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Header -->
+  <header>
+    <div class="sub-container">
+      <h1>Portfolio Project</h1>
+      <nav>
+        <a href="index.html">← Back to Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Project Content -->
+  <div class="project-details">
+    <h2>Project Overview</h2>
+    <p>
+      This is a <strong>full stack project</strong> designed to showcase a developer portfolio. It includes a visually appealing frontend, a backend built using Node.js, and features such as form submissions, dynamic project listings, and responsive design.
+    </p>
+    <p>
+      Technologies used include HTML, CSS (with dark theme), JavaScript, Node.js, and Express. Contact form data is handled securely on the server, and project pages like this one are dynamically added or updated.
+    </p>
+    <ul>
+      <li>Interactive UI with particle background</li>
+      <li>Responsive design for all devices</li>
+      <li>Form data routed to backend using Node.js</li>
+      <li>Expandable project pages with “View More”</li>
+    </ul>
+
+    <div class="project-dates">
+      <p><strong>Start Date:</strong> May 2025</p>
+      <p><strong>Status:</strong> Currently in development</p>
+    </div>
+
+    <a class="github-button" href="https://github.com/yourusername/your-portfolio-repo" target="_blank">View on GitHub</a>
+  </div>
+
+  <!-- Particle config -->
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60 },
+        color: { value: "#00aaff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.2 },
+        size: { value: 3 },
+        line_linked: {
+          enable: true,
+          distance: 120,
+          color: "#00aaff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 2,
+          direction: "none",
+          out_mode: "out"
+        }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
